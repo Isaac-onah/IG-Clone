@@ -53,8 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Column(
 
-         // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
+        // axis because Columns are vertical (the cross axis would be
           // horizontal).
           //
           // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
