@@ -9,4 +9,16 @@ class Post {
   final DateTime datePublished;
   final String postUrl;
   final String profImage;
+
+  const Post(
+      {required this.description,
+        required this.uid,
+        required this.username,
+        required this.likes,
+        required this.postId,
+        required this.datePublished,
+        required this.postUrl,
+        required this.profImage,
+      });
+
 }
