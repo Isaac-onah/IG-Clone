@@ -33,8 +33,16 @@ class Post {
         username: snapshot["username"],
         postUrl: snapshot['postUrl'],
         profImage: snapshot['profImage']
-    );
-  }
+    );}
 
-
+  Map<String, dynamic> toJson() => {
+    "description": description,
+    "uid": uid,
+    "likes": likes,
+    "username": username,
+    "postId": postId,
+    "datePublished": datePublished,
+    'postUrl': postUrl,
+    'profImage': profImage
+  };
 }
