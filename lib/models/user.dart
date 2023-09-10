@@ -33,4 +33,15 @@ class User {
       following: snapshot["following"],
     );
   }
+
+  Map<String, dynamic> toJson() => {
+    "username": username,
+    "uid": uid,
+    "email": email,
+    "photoUrl": photoUrl,
+    "bio": bio,
+    "followers": followers,
+    "following": following,
+  };
+
 }
