@@ -11,6 +11,12 @@ class CommentCard extends StatelessWidget {
     return Container(
         child: Row(
         children: [
+          CircleAvatar(
+            backgroundImage: NetworkImage(
+              snap.data()['profilePic'],
+            ),
+            radius: 18,
+          ),
           ])
     );
   }
