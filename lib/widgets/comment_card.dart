@@ -51,6 +51,13 @@ class CommentCard extends StatelessWidget {
               ),
             ),
           ),
+          Container(
+            padding: const EdgeInsets.all(8),
+            child: const Icon(
+              Icons.favorite,
+              size: 16,
+            ),
+          )
           ])
     );
   }
