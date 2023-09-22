@@ -27,7 +27,13 @@ class AuthMethods {
     required String bio,
     required Uint8List file,
   })async {
+    if (email.isNotEmpty ||
+        password.isNotEmpty ||
+        username.isNotEmpty ||
+        bio.isNotEmpty ||
+        file != null) {
 
+    }
   }
 
 }
