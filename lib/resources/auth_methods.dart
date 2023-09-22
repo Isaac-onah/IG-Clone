@@ -17,4 +17,17 @@ class AuthMethods {
 
     return model.User.fromSnap(documentSnapshot);
   }
+
+  // Signing Up User
+
+  Future<String> signUpUser({
+    required String email,
+    required String password,
+    required String username,
+    required String bio,
+    required Uint8List file,
+  }){
+
+  }
+
 }
