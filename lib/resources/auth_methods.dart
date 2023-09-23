@@ -60,7 +60,10 @@ class AuthMethods {
 
           res = "success";
         }
+    }catch (err) {
+      return err.toString();
     }
+    return res;
   }
 
 }
