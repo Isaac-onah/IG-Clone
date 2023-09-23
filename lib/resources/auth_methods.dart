@@ -27,36 +27,39 @@ class AuthMethods {
     required String bio,
     required Uint8List file,
   })async {
-    if (email.isNotEmpty ||
-        password.isNotEmpty ||
-        username.isNotEmpty ||
-        bio.isNotEmpty ||
-        file != null) {
-      UserCredential cred = await _auth.createUserWithEmailAndPassword(
-        email: email,
-        password: password,
-      );
+    String res = "Some error Occurred";
+    try {
+        if (email.isNotEmpty ||
+            password.isNotEmpty ||
+            username.isNotEmpty ||
+            bio.isNotEmpty ||
+            file != null) {
+          UserCredential cred = await _auth.createUserWithEmailAndPassword(
+            email: email,
+            password: password,
+          );
 
-      String photoUrl =
-      await StorageMethods().uploadImageToStorage('profilePics', file, false);
+          String photoUrl =
+          await StorageMethods().uploadImageToStorage('profilePics', file, false);
 
-      model.User user = model.User(
-        username: username,
-        uid: cred.user!.uid,
-        photoUrl: photoUrl,
-        email: email,
-        bio: bio,
-        followers: [],
-        following: [],
-      );
+          model.User user = model.User(
+            username: username,
+            uid: cred.user!.uid,
+            photoUrl: photoUrl,
+            email: email,
+            bio: bio,
+            followers: [],
+            following: [],
+          );
 
-      // adding user in our database
-      await _firestore
-          .collection("users")
-          .doc(cred.user!.uid)
-          .set(user.toJson());
+          // adding user in our database
+          await _firestore
+              .collection("users")
+              .doc(cred.user!.uid)
+              .set(user.toJson());
 
-      res = "success";
+          res = "success";
+        }
     }
   }
 
