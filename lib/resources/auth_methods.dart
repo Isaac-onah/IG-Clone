@@ -71,6 +71,9 @@ class AuthMethods {
     required String email,
     required String password,
   }) async {
+    String res = "Some error Occurred";
+    try {
 
+    }
   }
 }
