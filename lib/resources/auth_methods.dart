@@ -66,5 +66,11 @@ class AuthMethods {
     }
     return res;
   }
+// logging in user
+  Future<String> loginUser({
+    required String email,
+    required String password,
+  }) async {
 
+  }
 }
