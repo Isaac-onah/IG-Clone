@@ -81,6 +81,9 @@ class AuthMethods {
         );
         res = "success";
       }
+      else {
+        res = "Please enter all the fields";
+      }
     }
   }
 }
