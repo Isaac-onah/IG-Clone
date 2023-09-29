@@ -9,7 +9,8 @@ class FireStoreMethods {
 // asking uid here because we dont want to make extra calls to firebase auth when we can just get from our state management
   String res = "Some error occurred";
   try {
-
+  _firestore.collection('posts').doc(postId).set(post.toJson());
+  res = "success";
   }catch (err) {
   res = err.toString();
   }
