@@ -8,5 +8,7 @@ class FireStoreMethods {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 // asking uid here because we dont want to make extra calls to firebase auth when we can just get from our state management
   String res = "Some error occurred";
+  try {
 
+  }
 }
