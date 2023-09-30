@@ -32,3 +32,4 @@ class FireStoreMethods {
   }
   return res;
 }
+}
