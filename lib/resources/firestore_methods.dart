@@ -32,4 +32,7 @@ class FireStoreMethods {
   }
   return res;
 }
+  Future<String> likePost(String postId, String uid, List likes) async {
+    String res = "Some error occurred";
+  }
 }
