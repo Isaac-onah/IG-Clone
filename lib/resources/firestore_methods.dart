@@ -40,7 +40,13 @@ class FireStoreMethods {
         _firestore.collection('posts').doc(postId).update({
           'likes': FieldValue.arrayRemove([uid])
         });
+      }else {
+        // else we need to add uid to the likes array
+        _firestore.collection('posts').doc(postId).update({
+          'likes': FieldValue.arrayUnion([uid])
+        });
       }
+      res = 'success';
 
     }catch (err) {
       res = err.toString();
