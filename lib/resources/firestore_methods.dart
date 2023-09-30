@@ -35,6 +35,12 @@ class FireStoreMethods {
   Future<String> likePost(String postId, String uid, List likes) async {
     String res = "Some error occurred";
     try {
+      if (likes.contains(uid)) {
+        // if the likes list contains the user uid, we need to remove it
+        _firestore.collection('posts').doc(postId).update({
+          'likes': FieldValue.arrayRemove([uid])
+        });
+      }
 
     }catch (err) {
       res = err.toString();
