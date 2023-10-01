@@ -60,7 +60,9 @@ class FireStoreMethods {
     String res = "Some error occurred";
     try {
 
-
+    else {
+    res = "Please enter text";
+    }
     }catch (err) {
       res = err.toString();
     }
