@@ -57,6 +57,10 @@ class FireStoreMethods {
   // Post comment
   Future<String> postComment(String postId, String text, String uid,
       String name, String profilePic) async {
+    String res = "Some error occurred";
+    try {
+
+    }
 
   }
 }
