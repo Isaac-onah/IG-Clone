@@ -59,14 +59,15 @@ class FireStoreMethods {
       String name, String profilePic) async {
     String res = "Some error occurred";
     try {
-
-    else {
-    res = "Please enter text";
-    }
-    }catch (err) {
+      if (text.isNotEmpty) {
+        // if the likes list contains the user uid, we need to remove it
+        String commentId = const Uuid().v1();
+      } else {
+        res = "Please enter text";
+      }
+    } catch (err) {
       res = err.toString();
     }
     return res;
-
   }
 }
