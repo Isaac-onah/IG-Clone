@@ -8,4 +8,4 @@ import 'package:igclone/responsive/web_screen_layout.dart';
 import 'package:igclone/utils/colors.dart';
 import 'package:igclone/utils/global_variable.dart';
 import 'package:igclone/utils/utils.dart';
-import 'package:instagram_clone_flutter/widgets/text_field_input.dart';
+import 'package:igclone/widgets/text_field_input.dart';
