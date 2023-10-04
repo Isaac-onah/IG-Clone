@@ -90,7 +90,7 @@ class FireStoreMethods {
     // try {
       await _firestore.collection('posts').doc(postId).delete();
       res = 'success';
-    // } catch (err) {
+    } catch (err) {
       res = err.toString();
     }
     return res;
