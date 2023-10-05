@@ -107,6 +107,8 @@ class FireStoreMethods {
         await _firestore.collection('users').doc(uid).update({
           'following': FieldValue.arrayRemove([followId])
         });
+      }else {
+
       }
     }catch (e) {
       if (kDebugMode) print(e.toString());
