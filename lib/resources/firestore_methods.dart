@@ -98,6 +98,8 @@ class FireStoreMethods {
   Future<void> followUser(String uid, String followId) async {
     try {
 
+    }catch (e) {
+      if (kDebugMode) print(e.toString());
     }
   }
 
