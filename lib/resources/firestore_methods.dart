@@ -100,6 +100,9 @@ class FireStoreMethods {
       DocumentSnapshot snap =
       await _firestore.collection('users').doc(uid).get();
       List following = (snap.data()! as dynamic)['following'];
+      if (following.contains(followId)) {
+
+      }
     }catch (e) {
       if (kDebugMode) print(e.toString());
     }
