@@ -111,6 +111,10 @@ class FireStoreMethods {
         await _firestore.collection('users').doc(followId).update({
           'followers': FieldValue.arrayUnion([uid])
         });
+
+        await _firestore.collection('users').doc(uid).update({
+          'following': FieldValue.arrayUnion([followId])
+        });
       }
     }catch (e) {
       if (kDebugMode) print(e.toString());
