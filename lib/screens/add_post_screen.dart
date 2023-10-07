@@ -7,3 +7,11 @@ import 'package:igclone/resources/firestore_methods.dart';
 import 'package:igclone/utils/colors.dart';
 import 'package:igclone/utils/utils.dart';
 import 'package:provider/provider.dart';
+
+
+class AddPostScreen extends StatefulWidget {
+  const AddPostScreen({Key? key}) : super(key: key);
+
+  @override
+  _AddPostScreenState createState() => _AddPostScreenState();
+}
