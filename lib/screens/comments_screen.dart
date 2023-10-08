@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:igclone/models/user.dart';
-import 'package:igclone/providers/user_provider.dart';
+import 'package:igclone/providers/provider_user.dart';
 import 'package:igclone/resources/firestore_methods.dart';
 import 'package:igclone/utils/colors.dart';
 import 'package:igclone/utils/utils.dart';
