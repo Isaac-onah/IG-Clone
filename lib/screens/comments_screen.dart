@@ -4,6 +4,6 @@ import 'package:igclone/models/user.dart';
 import 'package:igclone/providers/user_provider.dart';
 import 'package:igclone/resources/firestore_methods.dart';
 import 'package:igclone/utils/colors.dart';
-import 'package:instagram_clone_flutter/utils/utils.dart';
+import 'package:igclone/utils/utils.dart';
 import 'package:instagram_clone_flutter/widgets/comment_card.dart';
 import 'package:provider/provider.dart';
