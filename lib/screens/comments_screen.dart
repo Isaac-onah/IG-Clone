@@ -7,3 +7,11 @@ import 'package:igclone/utils/colors.dart';
 import 'package:igclone/utils/utils.dart';
 import 'package:igclone/widgets/comment_card.dart';
 import 'package:provider/provider.dart';
+
+class CommentsScreen extends StatefulWidget {
+  final postId;
+  const CommentsScreen({Key? key, required this.postId}) : super(key: key);
+
+  @override
+  _CommentsScreenState createState() => _CommentsScreenState();
+}
