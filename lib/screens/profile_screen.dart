@@ -7,3 +7,11 @@ import 'package:igclone/screens/login_screen.dart';
 import 'package:igclone/utils/colors.dart';
 import 'package:igclone/utils/utils.dart';
 import 'package:igclone/widgets/follow_button.dart';
+
+class ProfileScreen extends StatefulWidget {
+  final String uid;
+  const ProfileScreen({Key? key, required this.uid}) : super(key: key);
+
+  @override
+  State<ProfileScreen> createState() => _ProfileScreenState();
+}
