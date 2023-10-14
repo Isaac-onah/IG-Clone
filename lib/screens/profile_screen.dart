@@ -6,4 +6,4 @@ import 'package:igclone/resources/firestore_methods.dart';
 import 'package:igclone/screens/login_screen.dart';
 import 'package:igclone/utils/colors.dart';
 import 'package:igclone/utils/utils.dart';
-import 'package:instagram_clone_flutter/widgets/follow_button.dart';
+import 'package:igclone/widgets/follow_button.dart';
