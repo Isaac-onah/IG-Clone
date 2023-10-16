@@ -4,7 +4,7 @@ import 'package:igclone/resources/auth_methods.dart';
 import 'package:igclone/responsive/mobile_screen_layout.dart';
 import 'package:igclone/responsive/responsive_layout.dart';
 import 'package:igclone/responsive/web_screen_layout.dart';
-import 'package:instagram_clone_flutter/screens/signup_screen.dart';
+import 'package:igclone/screens/signup_screen.dart';
 import 'package:instagram_clone_flutter/utils/colors.dart';
 import 'package:instagram_clone_flutter/utils/global_variable.dart';
 import 'package:instagram_clone_flutter/utils/utils.dart';
