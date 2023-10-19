@@ -57,6 +57,7 @@ class _FeedScreenState extends State<FeedScreen> {
                 vertical: width > webScreenSize ? 15 : 0,
               ),
               child: Text('data sample')
+                ///uncomment the bellow item
               // PostCard(
               //   // snap: snapshot.data!.docs[index].data(),
               // ),
